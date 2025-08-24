@@ -1,0 +1,59 @@
+/* Estilos generales de la tabla */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;       /* Mantener siempre 18 columnas */
+  border: 2px solid #ccc;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Todas las celdas */
+.table td {
+  width: calc(100% / 18);
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Celdas vacías (solo para ocupar espacio) */
+.vacio {
+  background: #f9f9f9;
+}
+
+/* Celdas con elementos */
+.elemento {
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+/* Contenido dentro del elemento */
+.numero {
+  font-size: 0.75rem;
+}
+.simbolo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.nombre {
+  font-size: 0.8rem;
+}
+
+/* Efecto hover */
+.elemento:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background: #333;
+  color: white;
+}
+
+/* Colores según categoría */
+.no-metal        { background: #e6f4ea; }    /* verde claro */
+.gas-noble       { background: #e8f0fe; }    /* azul claro */
+.alcalino        { background: #fdebd0; }    /* naranja claro */
+.alcalinoterreo  { background: #fff3cd; }    /* amarillo claro */
+.halogeno        { background: #ffe0e6; }    /* rosado claro */
+.metaloide       { background: #e9f7fb; }    /* celeste */
+.post-transicion { background: #f1f5f9; }    /* gris claro */
